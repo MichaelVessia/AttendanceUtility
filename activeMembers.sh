@@ -6,6 +6,11 @@
 # Author:  Michael Vessia                                                                                       #
 #################################################################################################################
 
+# check for correct number of args
+if [ $# != 1 ]; then
+	echo Incorrect number of arguments passed to program.  Exiting...
+	exit
+fi
 # put all of the content of the csv files into one file
 cat *.csv > temp
 
